@@ -2,6 +2,7 @@ import "./App.css";
 
 import Header from "./components/Header";
 import IntroductionCard from "./components/IntroductionCard";
+import Footer from "./components/Footer";
 
 function App() {
 	const logoName = "My Logo";
@@ -20,6 +21,7 @@ function App() {
       {name.map((personName, index) => {
         console.log(`Rendering: ${personName}`); // Debugging output
         return (
+         
           <IntroductionCard
             key={index}
             name={personName}
@@ -27,8 +29,12 @@ function App() {
             age={age[index]}
             hobbyList={hobbyList[index].hobbies}
           />
+        
         );
+      
       })}
+      <Footer/>
+     
 		</div>
 	);
 }

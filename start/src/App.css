@@ -6,10 +6,18 @@ body {
 /*CSS for Footer*/
 
 .footer {
+  min-height: 50px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: #09d3ac;
+  border: 2px solid blue;
 
 }
 
 .footer__hidden {
+  opacity: 0;
 }
 
 
